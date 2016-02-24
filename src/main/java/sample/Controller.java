@@ -3,9 +3,11 @@ package sample;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.scene.PointLight;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Region;
+import javafx.scene.shape.Box;
 
 public class Controller {
 
@@ -29,6 +31,9 @@ public class Controller {
 
     @FXML // fx:id="fStretchDown"
     private Button fStretchDown; // Value injected by FXMLLoader
+
+    @FXML // fx:id="firstBox"
+    private Box firstBox; // Value injected by FXMLLoader
 
     @FXML // fx:id="lightZ"
     private TextField lightZ; // Value injected by FXMLLoader
@@ -57,8 +62,17 @@ public class Controller {
     @FXML // fx:id="sStretchDown"
     private Button sStretchDown; // Value injected by FXMLLoader
 
+    @FXML // fx:id="secondBox"
+    private Box secondBox; // Value injected by FXMLLoader
+
+    @FXML // fx:id="light"
+    private PointLight light; // Value injected by FXMLLoader
+
     @FXML // fx:id="fStretchUp"
     private Button fStretchUp; // Value injected by FXMLLoader
+
+    @FXML // fx:id="thirdBox"
+    private Box thirdBox; // Value injected by FXMLLoader
 
     @FXML // fx:id="tStretchUp"
     private Button tStretchUp; // Value injected by FXMLLoader
@@ -70,6 +84,7 @@ public class Controller {
         assert shapesPlayground != null : "fx:id=\"shapesPlayground\" was not injected: check your FXML file 'scene.fxml'.";
         assert lightX != null : "fx:id=\"lightX\" was not injected: check your FXML file 'scene.fxml'.";
         assert fStretchDown != null : "fx:id=\"fStretchDown\" was not injected: check your FXML file 'scene.fxml'.";
+        assert firstBox != null : "fx:id=\"firstBox\" was not injected: check your FXML file 'scene.fxml'.";
         assert lightZ != null : "fx:id=\"lightZ\" was not injected: check your FXML file 'scene.fxml'.";
         assert sStretchUp != null : "fx:id=\"sStretchUp\" was not injected: check your FXML file 'scene.fxml'.";
         assert tStretchDown != null : "fx:id=\"tStretchDown\" was not injected: check your FXML file 'scene.fxml'.";
@@ -79,8 +94,13 @@ public class Controller {
         assert sRotateRight != null : "fx:id=\"sRotateRight\" was not injected: check your FXML file 'scene.fxml'.";
         assert fRotateLeft != null : "fx:id=\"fRotateLeft\" was not injected: check your FXML file 'scene.fxml'.";
         assert sStretchDown != null : "fx:id=\"sStretchDown\" was not injected: check your FXML file 'scene.fxml'.";
+        assert secondBox != null : "fx:id=\"secondBox\" was not injected: check your FXML file 'scene.fxml'.";
+        assert light != null : "fx:id=\"light\" was not injected: check your FXML file 'scene.fxml'.";
         assert fStretchUp != null : "fx:id=\"fStretchUp\" was not injected: check your FXML file 'scene.fxml'.";
+        assert thirdBox != null : "fx:id=\"thirdBox\" was not injected: check your FXML file 'scene.fxml'.";
         assert tStretchUp != null : "fx:id=\"tStretchUp\" was not injected: check your FXML file 'scene.fxml'.";
 
     }
+
+
 }
