@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <Region fx:id="shapesPlayground" prefHeight="600.0" prefWidth="700.0" />
+            <Button fx:id="fRotateLeft" layoutX="721.0" layoutY="191.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="fStretchUp" layoutX="773.0" layoutY="152.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="fRotateRight" layoutX="827.0" layoutY="191.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="fStretchDown" layoutX="781.0" layoutY="235.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="sRotateLeft" layoutX="721.0" layoutY="347.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="sStretchUp" layoutX="781.0" layoutY="302.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="sRotateRight" layoutX="827.0" layoutY="347.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="sStretchDown" layoutX="781.0" layoutY="388.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="tRotateLeft" layoutX="731.0" layoutY="499.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="tStretchDown" layoutX="787.0" layoutY="537.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="tRotateRight" layoutX="827.0" layoutY="499.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="tStretchUp" layoutX="783.0" layoutY="456.0" mnemonicParsing="false" text="Button" />
+            <TextField fx:id="lightX" layoutX="698.0" layoutY="14.0" />
+            <TextField fx:id="lightY" layoutX="698.0" layoutY="46.0" />
+            <TextField fx:id="lightZ" layoutX="698.0" layoutY="77.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
