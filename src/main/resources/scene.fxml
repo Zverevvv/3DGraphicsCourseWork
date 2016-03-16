@@ -41,6 +41,8 @@
             <Box fx:id="secondBox" />
             <Box fx:id="thirdBox" layoutX="198.0" layoutY="128.0" />
             <PointLight fx:id="light" color="CHARTREUSE" layoutX="45.0" layoutY="39.0" lightOn="true" />
+            <PerspectiveCamera fx:id="camera" layoutX="226.0" layoutY="261.0" />
+            <Rectangle fx:id="floor" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="36.0" layoutY="272.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
          </children>
       </Pane>
    </children>

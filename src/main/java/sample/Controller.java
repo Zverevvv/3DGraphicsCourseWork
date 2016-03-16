@@ -1,13 +1,20 @@
+/**
+ * Sample Skeleton for 'scene.fxml' Controller Class
+ */
+
 package sample;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.scene.PerspectiveCamera;
 import javafx.scene.PointLight;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Region;
 import javafx.scene.shape.Box;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.transform.Rotate;
 
 public class Controller {
 
@@ -77,6 +84,12 @@ public class Controller {
     @FXML // fx:id="tStretchUp"
     private Button tStretchUp; // Value injected by FXMLLoader
 
+    @FXML // fx:id="camera"
+    private PerspectiveCamera camera; // Value injected by FXMLLoader
+
+    @FXML // fx:id="floor"
+    private Rectangle floor; // Value injected by FXMLLoader
+
     @FXML // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
         assert tRotateRight != null : "fx:id=\"tRotateRight\" was not injected: check your FXML file 'scene.fxml'.";
@@ -99,8 +112,20 @@ public class Controller {
         assert fStretchUp != null : "fx:id=\"fStretchUp\" was not injected: check your FXML file 'scene.fxml'.";
         assert thirdBox != null : "fx:id=\"thirdBox\" was not injected: check your FXML file 'scene.fxml'.";
         assert tStretchUp != null : "fx:id=\"tStretchUp\" was not injected: check your FXML file 'scene.fxml'.";
+        assert camera != null : "fx:id=\"camera\" was not injected: check your FXML file 'scene.fxml'.";
+        assert floor != null : "fx:id=\"floor\" was not injected: check your FXML file 'scene.fxml'.";
 
+        firstBox.setWidth(50.0);
+        firstBox.setHeight(100.0);
+        firstBox.setDepth(25.0);
+
+        firstBox.setRotationAxis(Rotate.X_AXIS);
+        firstBox.setRotate(50.0);
+        firstBox.setRotationAxis(Rotate.Y_AXIS);
+        firstBox.setRotate(20.0);
     }
 
-
+    private void rotateX (Box figure, Double value) {
+        
+    }
 }
